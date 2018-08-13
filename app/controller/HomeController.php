@@ -13,8 +13,8 @@ class HomeController
 {
     public function showHome()
     {
-        \Flight::render('./common/header.php');
-        \Flight::render('./home.php', ['message' => 'This is home body']);
-        \Flight::render('./common/footer.php');
+        \Flight::render('common/header.php');
+        \Flight::render('home.php', ['message' => 'This is home body']);
+        \Flight::render('common/footer.php');
     }
 }
